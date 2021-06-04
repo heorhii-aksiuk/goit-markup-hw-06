@@ -431,7 +431,13 @@
       <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
       <form class="modal-form" action="#" method="GET">
         <label class="modal-form-label">Имя
-          <input class="modal-form-input" type="text">
+          <span class="modal-form-span">
+            <input class="modal-form-input" type="text">
+
+            <svg class="modal-form-icon" width="18px" height="18px">
+              <use href="./images/svg/icons.svg#icon-person"></use>
+            </svg>
+          </span>
         </label>
         <label class="modal-form-label">Телефон
           <input class="modal-form-input" type="tel">
@@ -442,10 +448,11 @@
         <label class="modal-form-label">Комментарий
           <textarea class="modal-form-textarea" name=""></textarea>
         </label>
-        <label>Соглашаюсь с рассылкой и принимаю Условия договора
-          <input type="checkbox">
-        </label>
-        <button type="submit">Отправить</button>
+        <input type="checkbox" id="checkbox">
+        <label class="modal-form-checkbox-label" for="checkbox">Соглашаюсь с рассылкой и
+          принимаю <a class="agreement" href="">Условия
+            договора</a></label>
+        <button class="modal-submit-button" type="submit">Отправить</button>
       </form>
     </div>
   </div>
