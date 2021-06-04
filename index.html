@@ -421,15 +421,36 @@
   </footer>
 
   <!-- Модальное окно -->
-  <div class="backdrop is-hidden" data-modal>
+  <div class="backdrop" data-modal>
     <div class="modal">
       <button class="close-modal" type="button" data-modal-close>
         <svg class="close-modal-icon" width="18px" height="18px">
           <use href="./images/svg/icons.svg#icon-close"></use>
         </svg>
       </button>
+      <b class="modal-form-title">Оставьте свои данные, мы вам перезвоним</b>
+      <form class="modal-form" action="#" method="GET">
+        <label class="modal-form-label">Имя
+          <input class="modal-form-input" type="text">
+        </label>
+        <label class="modal-form-label">Телефон
+          <input class="modal-form-input" type="tel">
+        </label>
+        <label class="modal-form-label">Почта
+          <input class="modal-form-input" type="email">
+        </label>
+        <label class="modal-form-label">Комментарий
+          <textarea class="modal-form-textarea" name=""></textarea>
+        </label>
+        <label>Соглашаюсь с рассылкой и принимаю Условия договора
+          <input type="checkbox">
+        </label>
+        <button type="submit">Отправить</button>
+      </form>
     </div>
   </div>
+  <!-- is-hidden -->
+
 
   <!-- Открытие/закрытие модального окна -->
   <script src="./js/modal.js"></script>
