@@ -669,6 +669,7 @@ img {
   display: block;
   cursor: pointer;
   transition: fill var(--main-duration) var(--main-timing-function);
+  fill: var(--main-text-color);
 }
 
 .modal-form-input {
