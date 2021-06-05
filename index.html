@@ -421,7 +421,7 @@
   </footer>
 
   <!-- Модальное окно -->
-  <div class="backdrop" data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
       <button class="close-modal" type="button" data-modal-close>
         <svg class="close-modal-icon" width="18px" height="18px">
@@ -463,12 +463,13 @@
         </label>
 
         <label class="modal-form-checkbox-label">
-          <input class="checkbox-hidden-icon" type="checkbox" name="user-policy" required>
+          <input class="checkbox-hidden-icon visually-hidden" type="checkbox"
+            name="user-policy" required>
           <svg class="checkbox-icon" width="16px" height="15px">
             <use href="./images/svg/icons.svg#icon-check"></use>
           </svg>
           Соглашаюсь с рассылкой и
-          принимаю <a class="agreement" href="">Условия
+          принимаю&ensp;<a class="agreement" href="">Условия
             договора</a></label>
         <button class="modal-submit-button" type="submit">Отправить</button>
       </form>
@@ -477,8 +478,8 @@
   <!-- is-hidden -->
 
 
-  <!-- Открытие/закрытие модального окна -->
-  <!-- <script src="./js/modal.js"></script> -->
+  Открытие/закрытие модального окна
+  <script src="./js/modal.js"></script>
 
 </body>
 
