@@ -656,6 +656,7 @@ img {
   left: 15px;
   transform: translateY(-50%);
   display: block;
+  cursor: pointer;
   transition: fill var(--main-duration) var(--main-timing-function);
 }
 
@@ -705,12 +706,34 @@ img {
   outline: none;
 }
 
+.modal-form-textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .modal-form-checkbox-label {
   display: inline-block;
   margin-top: 20px;
   font-size: 14px;
   line-height: 1.71;
+  text-align: center;
   color: var(--paragraph-text-color);
+}
+
+.checkbox-hidden-icon {
+  position: absolute;
+}
+
+.checkbox-icon {
+  fill: transparent;
+  /* fill: var(--accent-color); */
+  stroke: var(--main-text-color);
+  stroke-width: 6px;
+}
+
+.checkbox-hidden-icon:checked + .checkbox-icon {
+  fill: var(--accent-color);
+  stroke: transparent;
+  stroke-width: 0px;
 }
 
 .agreement {

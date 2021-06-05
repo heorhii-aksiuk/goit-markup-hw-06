@@ -432,8 +432,8 @@
       <form class="modal-form" action="#">
         <label class="modal-form-label">Имя
           <span class="modal-form-span">
-            <input class="modal-form-input" type="text" name="user-name" placeholder=" "
-              required>
+            <input class="modal-form-input" type="text" name="user-name" minlength="2"
+              placeholder=" " required>
             <svg class="modal-form-icon" width="18px" height="18px">
               <use href="./images/svg/icons.svg#icon-person"></use>
             </svg>
@@ -461,8 +461,13 @@
           <textarea class="modal-form-textarea" name="user-message"
             placeholder="Введите текст"></textarea>
         </label>
-        <input type="checkbox" id="checkbox" name="user-policy" required>
-        <label class="modal-form-checkbox-label" for="checkbox">Соглашаюсь с рассылкой и
+
+        <label class="modal-form-checkbox-label">
+          <input class="checkbox-hidden-icon" type="checkbox" name="user-policy" required>
+          <svg class="checkbox-icon" width="16px" height="15px">
+            <use href="./images/svg/icons.svg#icon-check"></use>
+          </svg>
+          Соглашаюсь с рассылкой и
           принимаю <a class="agreement" href="">Условия
             договора</a></label>
         <button class="modal-submit-button" type="submit">Отправить</button>
