@@ -697,6 +697,12 @@ img {
 }
 .close-modal-icon {
   display: block;
+  transition: fill var(--main-duration) var(--main-timing-function);
+}
+
+.close-modal:hover .close-modal-icon,
+.close-modal:focus .close-modal-icon {
+  fill: var(--accent-color);
 }
 
 .modal-form-title {
