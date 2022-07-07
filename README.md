@@ -1,2 +1,2 @@
 # goit-markup-hw-06
-GoIT. Markup. Homework #6 (Forms)
+GoIT. HTML&CSS. Homework #6 (Forms)
